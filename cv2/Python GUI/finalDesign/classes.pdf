@@ -1,0 +1,11 @@
+digraph classes {
+	graph [charset="utf-8", rankdir=BT];
+	node [label="\N"];
+	graph [bb="0,0,920,204"];
+	0 [label="{Image_Correction|angle\llineimage\lrotate\l|CalcDegree(srcImage, hough_threshold)\lDegreeTrans(theta)\limgNormalization(image)\\
+lrotateImage(src, degree)\l}", shape=record, pos="145,102", rects="0,152,290,172 0,100,290,152 0,32,290,100", width="4.03", height="1.94"];
+	1 [label="{ImgPredict|network : LeNet5\l|imgNarrow(image)\lpredict(cutting_image)\lpredictProb(cutting_image)\ltopK(array, top_k)\l}", shape=record, pos="409,102", rects="308,136,511,156 308,116,511,136 308,48,511,116", width="2.81", height="1.50"];
+	2 [label="{Recognition|cutting_image : list\l|area(width, height)\lareaMethod_getPosition(Position)\ldraw_rectangle(image_path, Position)\\
+lgetHProjection(image)\lgetVProjection(image)\lget_cutting_Width(Position)\limgNormalization(image)\lpojectionMethod_get_Image_c\
+haracterPosition(image)\lwidthMethod_getPosition(Position, cutting_Width)\l}", shape=record, pos="724,102", rects="528,176,921,196 528,156,921,176 528,8,921,156", width="5.44", height="2.61"];
+}
